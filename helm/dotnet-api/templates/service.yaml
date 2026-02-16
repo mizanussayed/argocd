@@ -11,6 +11,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.targetPort }}
+      protocol: {{ .Values.service.protocol }}
   selector:
     app: dotnet-api
     release: {{ .Release.Name }}
