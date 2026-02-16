@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dotnet-api
-  namespace: argo-demo
   labels:
     app: dotnet-api
 spec:

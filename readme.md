@@ -14,6 +14,7 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 ## Retrieve Credentials
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+kubectl port-forward -n argo-demo svc/dotnet-api 3000:3000
 ```
 
 ## API Calls
